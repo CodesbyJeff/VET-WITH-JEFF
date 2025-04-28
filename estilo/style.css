@@ -103,7 +103,7 @@ p {
   width: 1440px;
   max-width: 100%;
   margin: 0 auto;
-  background-color: var(--darkblue-color);
+  background-color: var(--folha-color);
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(255, 255, 255, 0.2) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;
 }
 
@@ -393,9 +393,6 @@ p {
 /* --- Section Four styles: End --- */
 
 
-
-
-
 /* --- Footer styles: Start --- */
 .footer {
   color: var(--font-color);
@@ -441,7 +438,7 @@ p {
   margin-right: 10px;
 }
 .footer .footer-wrap .widgets .links .link:hover {
-  background-color: var(--first-blue-bg-color);
+  background-color: var(--folha-color);
 }
 .footer .footer-wrap .widgets .links .link i {
   color: #000 !important;
@@ -456,10 +453,6 @@ p {
   text-decoration: underline;
 }
 /* --- Footer styles: End --- */
-
-
-
-
 
 /* --- CURSOR STYLES: Start --- */
 .cursor {
@@ -516,3 +509,93 @@ p {
   border-radius: 20px;
 }
   /* --- SCROLL STYLE COLOR: End --- */
+
+
+ /** ---------------------------------------------------------------------- START SERVICE PAGE STYLES ------------------------------------------------ **/
+
+/* --- Services section styles: Start --- */
+.services-section, .grooming-section {
+  margin-bottom: 50px;
+  position: relative;
+}
+.services-section, .emergency-care-section {
+  overflow-x: hidden;
+}
+.img-bg {
+  border-radius: 50%;
+  background-color: var(--yellowpastel-color);
+}
+.img-bg img {
+ mix-blend-mode: multiply;
+ border-radius: 50%;
+
+}
+.services-section .services-content .services-title,
+ .grooming-section .grooming-content .grooming-title, .emergency-care-section .emergency-care-content .emergency-care-title{
+  padding: 20px;
+}
+.services-section .services-content .services-title h2, 
+.grooming-section .grooming-content .grooming-title h2, 
+.emergency-care-section .emergency-care-content .emergency-care-title h2{ 
+  color: var(--font-color);
+  font-family: var(--main-font-family);
+}
+.services-section .services-content .services-description p, 
+.grooming-section .grooming-content .grooming-description p,
+.emergency-care-section .emergency-care-content .emergency-care-description p{ 
+  letter-spacing: 2px;
+  color: var(--font-color);
+  margin-bottom: 20px;
+}
+.services-section .services-content .services-list-img, .emergency-list-img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.services-section .services-content .services-list, .emergency-care-section .emergency-care-content .emergency-care-services {
+  width: 70%;
+}
+.services-section .services-content .services-list .service-item, 
+.grooming-section .grooming-content .grooming-services .grooming-service-item,
+.emergency-care-section .emergency-care-content .emergency-care-services .emergency-care-service-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.services-section .services-content .services-list.fade-in, .emergency-care-section .emergency-care-content .img-bg.fade-in{
+  animation: fadeInLeft 1s ease-in-out forwards;
+}
+.services-section .services-content .img-bg.fade-in, .emergency-care-section .emergency-care-content .emergency-care-services.fade-in{
+  animation: fadeInRight 1s ease-in-out forwards;
+}
+
+
+.services-section .services-content .services-list .service-item  img, 
+ .grooming-section .grooming-content .grooming-services .grooming-service-item img,
+ .emergency-care-section .emergency-care-content .emergency-care-services .emergency-care-service-item img {
+  width: 5%;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(68deg) brightness(102%) contrast(102%);
+}
+.services-section .services-content .services-list .service-item h3, 
+.grooming-section .grooming-content .grooming-services .grooming-service-item h3,
+.emergency-care-section .emergency-care-content .emergency-care-services .emergency-care-service-item h3{
+  width: 20%;
+  color: var(--yellow-color);
+  margin-bottom: 0;
+}
+.services-section .services-content .services-list .service-item p, 
+.grooming-section .grooming-content .grooming-services .grooming-service-item  p,
+.emergency-care-section .emergency-care-content .emergency-care-services .emergency-care-service-item p{
+  width: 70%;
+  color: var(--font-color);
+  letter-spacing: 0;
+
+}
+/* --- Services section styles: End --- */
+
