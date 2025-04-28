@@ -1,0 +1,10 @@
+/** Variables **/
+:root {
+    --first-blue-bg-color: #739ee3; /** shade of blue **/
+    --second-blue-bg-color: #5380c1;
+    --gold-color: #edc315; /** gold color (shade of yellow) **/
+    --footer-bg-color: #343434;
+    --font-color: #ffffff;
+    --main-font-family: Poppins;
+    --second-font-family: Nunito;
+  }
